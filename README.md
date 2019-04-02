@@ -1,17 +1,16 @@
-_A simple template for starting python projects._
+_Classification Project._
 
 --
 
-# Title of the Project
-> One line short description of project.
+# Telco Churn
+> Why are our customers churning?
 
-Long description of the project encompassing multiple
-lines et cetera et cetera.
+
 
 
 ## Usage
 
-Additional instructions...
+
 
 
 ## Meta
