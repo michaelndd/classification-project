@@ -10,6 +10,7 @@ _Classification Project._
 
 ## Google Slide
 
+[Link to the slide here.](https://docs.google.com/presentation/d/1r3u7VIg-BW7_NnOiPmCGT0plU2jwh5i2QA9M7XHWwPw)
 
 
 ## Usage
@@ -23,8 +24,8 @@ Michael and Dd – [@michaelndd](https://github.com/michaelndd)
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
-[https://github.com/ecdedios](https://github.com/ecdedios)
-[https://github.com/mpmoran](https://github.com/mpmoran)
+- [https://github.com/ecdedios](https://github.com/ecdedios)
+- [https://github.com/mpmoran](https://github.com/mpmoran)
 
 ## Contributing
 
