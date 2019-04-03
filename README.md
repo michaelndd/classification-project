@@ -24,7 +24,7 @@ Michael and Dd – [@michaelndd](https://github.com/michaelndd)
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
 [https://github.com/ecdedios](https://github.com/ecdedios)
-[https://github.com/ecdedios](https://github.com/mpmoran)
+[https://github.com/mpmoran](https://github.com/mpmoran)
 
 ## Contributing
 
