@@ -82,5 +82,8 @@ env.py
 __pycache__/
 .ipynb_checkpoints/
 *.csv
-*.xlsx
+*.
+
+# Dd's
+dd*
 
