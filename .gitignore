@@ -81,7 +81,7 @@ cache/
 env.py
 __pycache__/
 .ipynb_checkpoints/
-*.csv
+# *.csv
 *.
 
 # Dd's
