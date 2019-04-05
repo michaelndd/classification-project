@@ -8,7 +8,6 @@ import pandas as pd
 
 from sqlalchemy import create_engine
 
-from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import MinMaxScaler
 
@@ -248,11 +247,6 @@ def prepare_data(input_df):
         "online_security_backup",
     ]
     X = df[xcols]
-    y = df[["churn"]]
-
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.30, random_state=123, stratify=y
-    )
 
     # Encode
     to_encode = [
@@ -261,24 +255,18 @@ def prepare_data(input_df):
         "tech_support",
         "paperless_billing",
     ]
-    encoders = {}
     for col in to_encode:
         encoder = LabelEncoder()
-        encoder.fit(X_train[col])
-        X_train[col] = encoder.transform(X_train[col])
-        X_test[col] = encoder.transform(X_test[col])
-        encoders[col] = encoder
+        encoder.fit(X[col])
+        X[col] = encoder.transform(X[col])
 
     # MinMax Scale
     scaler = MinMaxScaler()
-    scaler.fit(X_train[["monthly_charges", "total_charges"]])
-    X_train[["monthly_charges", "total_charges"]] = scaler.transform(
-        X_train[["monthly_charges", "total_charges"]]
-    )
-    X_test[["monthly_charges", "total_charges"]] = scaler.transform(
-        X_test[["monthly_charges", "total_charges"]]
+    scaler.fit(X[["monthly_charges", "total_charges"]])
+    X[["monthly_charges", "total_charges"]] = scaler.transform(
+        X[["monthly_charges", "total_charges"]]
     )
 
     features = ["internet_service_type_id", "contract_type_id"]
 
-    return X_train[features], X_test[features], y_train, y_test
+    return X[features]
